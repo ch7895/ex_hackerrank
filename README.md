@@ -1,2 +1,3 @@
 # hackerrank
-hackerrank example 
+hackerrank example
+by scala 

@@ -1,0 +1,4 @@
+object Solution extends App {
+  val n = readInt
+  println(readLine.split(" ").map(i=>BigInt(i)).sum)
+}

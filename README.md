@@ -1,3 +1,3 @@
 # hackerrank
-hackerrank example
-by scala 
+hackerrank example <br/>
+use scala 

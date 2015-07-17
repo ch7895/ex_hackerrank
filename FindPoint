@@ -1,0 +1,19 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        var n = readInt
+        
+        for(i <- 1 to n){
+            var arr = readLine.split(" ").map(_.toInt)
+                
+            val x = 2*arr(2)-arr(0)
+            val y = 2*arr(3)-arr(1)
+            
+            println(  x + " " + y )
+            
+        }
+        
+    }
+}

@@ -1,0 +1,23 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        val n = readInt
+        var matrix = Array.ofDim[Int](n,n)
+        var suma = 0
+        var sumb = 0
+        for(i <- 0 until n){
+            
+            matrix(i) =  readLine.split(" ").map(_.toInt)    
+            
+            suma += matrix(i)(i)
+            sumb += matrix(i)(n-i-1)   
+                        
+        }
+               
+        println((suma-sumb).abs)
+        
+        
+    }
+}

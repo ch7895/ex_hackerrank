@@ -1,0 +1,18 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        
+        val n = readInt
+        var arr = readLine.split(" ").map(_.toInt)
+      
+        printf("%1.6f\n", arr.count(_>0).toFloat/n)
+        printf("%1.6f\n", arr.count(_<0).toFloat/n)
+        printf("%1.6f\n", arr.count(_==0).toFloat/n)
+        
+      
+            
+    }
+    
+}

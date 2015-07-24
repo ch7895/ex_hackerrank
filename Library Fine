@@ -1,0 +1,24 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        var rd = readLine.split(" ")
+        var ed = readLine.split(" ")
+            
+        var fine = 0
+            
+        if(rd(2) > ed(2))
+            fine = 10000
+        else if(ed(2)==rd(2)){
+            if(rd(1) > ed(1)){
+                fine = (rd(1).toInt - ed(1).toInt) * 500
+            }else if(ed(1)==rd(1)){
+                if(rd(0) > ed(0))
+                    fine = (rd(0).toInt - ed(0).toInt) * 15
+            }
+        }
+        
+        println(fine)
+    }
+}

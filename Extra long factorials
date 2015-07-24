@@ -1,0 +1,15 @@
+object Solution {
+
+    def factorial(n: BigInt): BigInt = {  
+      if (n <= 1)
+         1  
+      else    
+      n * factorial(n - 1)
+   }
+    
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        var n = readInt
+        print(factorial(n))
+    }

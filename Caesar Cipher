@@ -1,0 +1,25 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        
+        val n = readInt
+        var str = readLine
+        var r = readInt
+            r = r%26
+            
+        val z = ('z'-r).toChar
+        val Z = ('Z'-r).toChar
+        
+        for(i <- str){
+            if( ( i >= 'a' && i <='z') || (i >= 'A' && i <='Z') ){
+                if((i>z && i<='z') || (i>Z && i<='Z'))
+                    print((i+r-26).toChar)
+                else 
+                    print((i+r).toChar)
+            }else
+                print(i)
+        }
+    }
+}

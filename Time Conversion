@@ -1,0 +1,18 @@
+object Solution {
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        val str = readLine
+        var arr = str.split(":")
+        
+        var flag = arr(2).drop(2)
+        arr(2) = arr(2).dropRight(2)
+        
+        if(flag=="PM" && (arr(0).toInt < 12)){
+            arr(0) = (arr(0).toInt + 12).toString
+        }else if(flag=="AM" && (arr(0)=="12"))
+            arr(0) = "00"
+        
+        println(arr.mkString(":"))
+    }
+}

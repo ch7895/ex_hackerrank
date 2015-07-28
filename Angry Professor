@@ -1,0 +1,21 @@
+object Solution {
+    
+     def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+       
+        val testn = readInt
+        
+        for(i <- 1 to testn){
+            
+            val arr1 = readLine.split(" ").map(_.toInt)
+            val n = arr1(0)
+            val k = arr1(1)
+                
+            val l = readLine.split(" ").map(_.toInt).filter(_ <= 0).length 
+            println(if(l<k)"YES"else"NO")
+            
+                
+        }
+    }
+}

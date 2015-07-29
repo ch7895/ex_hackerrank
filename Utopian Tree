@@ -1,0 +1,18 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        
+        val testn = readInt
+        var h = 0
+        
+        for(i <- 1 to testn){
+            val n = readInt    
+            h = Math.pow(2,(n/2)+1).toInt -1
+            println(if(n%2==1) h*2 else h)
+            
+        }
+        
+    }
+ }

@@ -1,0 +1,28 @@
+
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        val tn = readInt
+            
+        for(i <- 0 until tn){
+            val n = readInt
+            var s = n
+            var cnt = 0
+                
+           
+            if(n>=3){
+                while(cnt!=n){
+                    cnt=0
+                    s+=1
+                    for(j<- 1 to n ;  if s%j==0)cnt=cnt+1
+                    
+                }    
+            }
+                
+                
+            println(s)
+        }
+    }
+}

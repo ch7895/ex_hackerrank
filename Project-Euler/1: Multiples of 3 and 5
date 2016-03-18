@@ -1,0 +1,20 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution*/
+        
+        var tn = readInt()
+        for(i<- 0 until tn){
+            var n = readInt()-1
+            var n3 = Math.ceil(n/3).toLong;
+            var n5 = Math.ceil(n/5).toLong;
+            var n15 = Math.ceil(n/15).toLong;
+
+            var sum3 : Long = (n3*(3+n3*3)>>1)
+            var sum5 : Long = (n5*(5+n5*5)>>1)
+            var sum15 :Long = (n15*(15+n15*15)>>1)
+            
+            println((sum3 + sum5 - sum15))
+        }
+    }
+}

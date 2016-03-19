@@ -1,0 +1,26 @@
+object Solution {
+
+    def main(args: Array[String]) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution
+*/
+        val tn = readInt
+        for( i<- 0 until tn){
+            
+            var n = readInt
+            var nl = n.toLong   
+            var sumA : Long = (nl*(1+nl)/2)*(nl*(1+nl)/2) 
+            var sumB : Long = 0
+                
+            for(i <- 1 to n) sumB+=i*i
+            
+            println( if(sumA>sumB) sumA - sumB else sumB - sumA )
+            
+        }
+    
+    }
+}
+
+//(1+2)^2   : n(a+l)/2
+//(1^2+2^2) : n(n+1)(2n+1))/6  
+
+
